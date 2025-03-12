@@ -36,10 +36,14 @@ When using the Datadog .NET Lambda layer (`dd-trace-dotnet`):
 ./publish.sh
 ```
 
-3. Deploy the stack with your Datadog API key:
+3. Deploy the stack with your Datadog API key (and optionally specify your Datadog site):
 
 ```bash
+# Deploy with default site (app.datadoghq.com)
 cdk deploy --parameters DdApiKey=<your-dd-api-key>
+
+# Or specify a custom site
+cdk deploy --parameters DdApiKey=<your-dd-api-key> --parameters DdSite=<your-dd-site>
 ```
 
 4. Once deployed, invoke the DdTrace-EchoFunction Lambda function with any JSON payload
