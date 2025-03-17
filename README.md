@@ -39,7 +39,7 @@ When using the Datadog .NET Lambda layer (`dd-trace-dotnet`):
 3. Deploy the stack with your Datadog API key (and optionally specify your Datadog site):
 
 ```bash
-# Deploy with default site (app.datadoghq.com)
+# Deploy with default site (datadoghq.com)
 cdk deploy --parameters DdApiKey=<your-dd-api-key>
 
 # Or specify a custom site

@@ -28,7 +28,7 @@ namespace CDK
             {
                 Description = "Datadog site",
                 Type = "String",
-                Default = "app.datadoghq.com"
+                Default = "datadoghq.com"
             });
 
             var environment = new Dictionary<string, string>
